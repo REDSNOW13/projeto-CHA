@@ -88,3 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const receitas = document.querySelectorAll('#receitas > li');
+
+    receitas.forEach(receita => {
+        const titulo = receita.querySelector('.titulo-receita');
+        const detalhes = receita.querySelector('.detalhes-receita');
+
+        titulo.addEventListener('click', () => {
+            const isVisible = detalhes.style.display === 'block';
+            detalhes.style.display = isVisible ? 'none' : 'block';
+        });
+    });
+});
