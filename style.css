@@ -284,3 +284,40 @@ section img {
     color: #333;
     display: block;
 }
+
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+#receitas {
+    list-style-type: none;
+    padding: 0;
+}
+
+#receitas > li {
+    margin-bottom: 20px;
+}
+
+.titulo-receita {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.detalhes-receita {
+    display: none;
+    margin-top: 10px;
+}
+
+.detalhes-receita h4 {
+    margin: 10px 0 5px;
+}
+
+.detalhes-receita ul, .detalhes-receita ol {
+    margin: 0 0 10px 20px;
+}
