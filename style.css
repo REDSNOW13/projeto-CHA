@@ -248,6 +248,12 @@ section img {
 }
 
 
+}
+
+h3 {
+    color: #333;
+}
+
 #receitas {
     list-style-type: none;
     padding: 4px;
@@ -279,33 +285,10 @@ section img {
     margin-bottom: 10px; 
 }
 
-#receitas span {
+#receitas .titulo-receita {
     font-size: 18px;
     color: #333;
     display: block;
-}
-
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-h3 {
-    color: #333;
-}
-
-#receitas {
-    list-style-type: none;
-    padding: 0;
-}
-
-#receitas > li {
-    margin-bottom: 20px;
-}
-
-.titulo-receita {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 10px;
     cursor: pointer;
 }
 
