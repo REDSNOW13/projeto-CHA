@@ -75,29 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-document.addEventListener('DOMContentLoaded', () => {
-    const receitas = document.querySelectorAll('#receitas > li');
+const receitas = document.querySelectorAll('.receita-nome');
 
-    receitas.forEach(receita => {
-        const titulo = receita.querySelector('.titulo-receita');
-        const detalhes = receita.querySelector('.detalhes-receita');
-
-        titulo.addEventListener('click', () => {
-            const isVisible = detalhes.style.display === 'block';
-            detalhes.style.display = isVisible ? 'none' : 'block';
-        });
-    });
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const receitas = document.querySelectorAll('#receitas > li');
-
-    receitas.forEach(receita => {
-        const titulo = receita.querySelector('.titulo-receita');
-        const detalhes = receita.querySelector('.detalhes-receita');
-
-        titulo.addEventListener('click', () => {
-            const isVisible = detalhes.style.display === 'block';
-            detalhes.style.display = isVisible ? 'none' : 'block';
-        });
-    });
+receitas.forEach(receita => {
+  receita.addEventListener('click', () => {
+    const info = receita.nextElementSibling;
+    info.classList.toggle('hidden');
+  });
 });
